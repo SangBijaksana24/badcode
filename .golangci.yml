@@ -3,8 +3,7 @@ linters-settings:
     min-complexity: 2
 
   funlen:
-    lines: 60
-    statements: 40
+    lines: 20
 
 linters:
   disable-all: true
