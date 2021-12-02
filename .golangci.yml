@@ -1,0 +1,14 @@
+linters-settings:
+  nestif:
+    min-complexity: 2
+
+  funlen:
+    lines: 60
+    statements: 40
+
+linters:
+  disable-all: true
+  enable:
+    - deadcode
+    - nestif
+    - funlen
