@@ -1,10 +1,15 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
-	tempBadcode("something")
-}
+	item, err := goodCode("something")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
-func tempBadcode(itemName string) (Item, error) {
-	return Item{Number: 1, Active: true}, nil
-
+	fmt.Println(item)
 }
